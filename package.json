@@ -1,0 +1,68 @@
+{
+  "name": "weixin-js-sdk-api",
+  "version": "0.0.1",
+  "description": "Weixin JS-SDK API",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp nodemon",
+    "dev": "gulp",
+    "build": "babel src -d dist",
+    "production": "cross-env NODE_ENV=production node dist/main.js",
+    "makemigration": "cross-env NODE_ENV=development node src/bin/index.js makemigration",
+    "test": "cross-env NODE_ENV=development standard && nodemon index.js"
+  },
+  "author": "yi-ge <a@wyr.me>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "array-flatten": "^2.1.1",
+    "auto-migrations": "^1.0.5",
+    "axios": "^0.18.0",
+    "chance": "^1.0.16",
+    "co-wechat-api": "^3.8.1",
+    "cross-env": "^5.2.0",
+    "debug": "^4.1.0",
+    "each-module": "^2.0.0",
+    "iconv-lite": "^0.4.24",
+    "js-base64": "^2.4.9",
+    "jssha": "^2.3.1",
+    "koa": "^2.6.1",
+    "koa-body": "^4.0.4",
+    "koa-jwt": "^3.5.1",
+    "koa-router": "^7.4.0",
+    "mime": "^2.3.1",
+    "moment-timezone": "^0.5.23",
+    "mysql2": "^1.6.3",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "sequelize": "^4.41.1",
+    "socket.io": "^2.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^4.0.6",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-nodemon": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/**",
+      "tmp.js"
+    ]
+  }
+}

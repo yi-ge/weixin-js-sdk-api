@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "weixin-js-sdk-api",
+    "script": "dist/main.js",
+    "cwd": "/home/ubuntu/site/weixin-js-sdk-api",
+    "exec_mode": "fork",
+    "max_memory_restart": "4G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+
+    }
+  }]
+}
